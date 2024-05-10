@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Clonage du dépôt') {
             steps {
-                sh "rm -R jenkins && git clone https://github.com/solofo772/jenkins.git && cd jenkins/"
+                sh "git clone https://github.com/solofo772/devops.git && cd devops/"
                 sh 'ls $pwd'
             }
         }
